@@ -1,0 +1,11 @@
+The Origin (2011): Dart was created by Google engineers (Lars Bak and Kasper Lund) in 2011.
+Originally, their goal was ambitious: they wanted to replace JavaScript as the main language of the web.
+They felt JavaScript was messy and hard to manage for big projects (like Gmail)
+
+The Pivot: It didn't quite work out as a JavaScript replacement.
+
+The Perfect Pairing (2017-2018): Then came Flutter.
+Google was building a new way to make mobile apps, but they needed a language that was fast, strict, and flexible.
+They realized Dart was perfect for this.
+
+After Flutter: Dart became one of the fastest-growing languages in the world because it is the engine that makes Flutter work.
