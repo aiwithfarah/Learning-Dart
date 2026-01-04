@@ -3,6 +3,9 @@ This is called Explicit Typing. You are forcing the computer to know it is a Str
 However, Dart is smart. It can guess the type based on the value you give it.
 This is called Type Inference.
 
+-----------------------------------------------------------------------------------
+When you use var username = "FlutterDev", Dart looks at the value "FlutterDev", infers that it is a String, and locks that variable as a String forever. If you try to assign 404 to it later, the compiler (your first line of defense) catches it immediately before you even run the app.
+-----------------------------------------------------------------------------------
 
 void main() {
   // Explicit (What we did before)
@@ -39,4 +42,5 @@ void main() {
   wildVariable = true; // Now I am a boolean!
   
   print(wildVariable);
+
 }
