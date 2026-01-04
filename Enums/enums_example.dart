@@ -1,3 +1,5 @@
+An Enum (Enumeration) is a custom type where you define exactly what values are allowed. You lock the choices down.
+
 // This is a "Structure" for logic. Sometimes you have a variable that can only be one of a few specific options.
 // Example: Connection Status. It can only be Connected, Disconnected, or Connecting.
 // Bad Way: Using Strings. status = "Conected" (Spelling mistake breaks the code!).
@@ -20,3 +22,4 @@ void main() {
 }
 
 //Please Wait!
+
