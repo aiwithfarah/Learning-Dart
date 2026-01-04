@@ -1,3 +1,5 @@
+Dart is a "Type Safe" language, meaning it checks your code for mismatched shapes (types) before you even run it.
+
 ? NULLABLE TYPE (The "Might Be Null" Label): Allows a variable to hold a null value.
 int? age; //it's ok if this is empty
 
@@ -17,4 +19,5 @@ String? profileUrl; //currently null
 print(profileUrl.length)
 
 //Dart stops you here. It is saying: "I can't give you the length of null.
+
 //If I let you run this, your app will crash."
