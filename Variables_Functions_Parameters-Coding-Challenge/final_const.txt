@@ -1,0 +1,32 @@
+In coding, if a variable should never change, we don't use var. We use final or const.
+
+1. final (Set Once)
+Use this for things that are calculated once and then locked.
+
+Example: A Transaction ID from a bank. You don't know it until the transaction happens,
+but once it happens, it never changes.
+
+2. const (Set Forever/Compile Time)
+Use this for things that are known before the app even runs.
+
+Example: The value of Pi (3.14) or the text "Welcome" on your login screen.
+
+The Difference:
+
+final: "I will lock this value when the code runs."
+
+const: "I am freezing this value right now, before the code even starts."
+
+void main() {
+  // A variable (Can change)
+  var stock = 100;
+  stock = 90; // Allowed
+
+  // Final (Locks after running)
+  final String dateToday = DateTime.now().toString(); 
+  // dateToday = "Tomorrow"; // ERROR! You can't change a final variable.
+
+  // Const (Hardcoded forever)
+  const double pi = 3.14159;
+  // pi = 3.14; // ERROR!
+}

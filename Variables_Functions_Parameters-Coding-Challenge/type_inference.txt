@@ -1,0 +1,42 @@
+So far, we have been writing code like this: String name = "Farah";
+This is called Explicit Typing. You are forcing the computer to know it is a String.
+However, Dart is smart. It can guess the type based on the value you give it.
+This is called Type Inference.
+
+
+void main() {
+  // Explicit (What we did before)
+  String name = "Farah";
+
+  // Inferred (The modern way)
+  // Dart sees quotes "" and says "Aha! This is a String."
+  var brand = "Spice Meve"; 
+  
+  // Dart sees a number and says "This is an int."
+  var stock = 100;
+
+  print(brand);
+}
+
+
+Why use var? It makes code cleaner. The official Dart style guide recommends using var for local variables where the type is obvious.
+
+The Danger Zone: dynamic There is another keyword called dynamic.
+
+var: Once Dart guesses it is a String, it stays a String forever. You can't change it to a number.
+
+dynamic: It turns off the safety. You can change it from a String to a Number to a Boolean.
+
+
+void main() {
+  // 1. VAR (Safe)
+  var price = 100; 
+  // price = "Cheap"; // ERROR! Dart knows 'price' is a number.
+
+  // 2. DYNAMIC (Unsafe - Avoid this unless necessary)
+  dynamic wildVariable = 100;
+  wildVariable = "Now I am text!"; // This is allowed.
+  wildVariable = true; // Now I am a boolean!
+  
+  print(wildVariable);
+}
