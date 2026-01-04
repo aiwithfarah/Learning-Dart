@@ -1,0 +1,20 @@
+? NULLABLE TYPE (The "Might Be Null" Label): Allows a variable to hold a null value.
+int? age; //it's ok if this is empty
+
+?? NULL COALESCING OPERATOR If the value is null, use a backup value instead.
+//If user Age is null use 18
+int finalAge = userAge ?? 18;
+
+! NULL ASSERTION OPERATOR Forces Dart to treat a nullable value as if it's guaranteed to be there.
+int realAge = userAge!
+
+--------------------
+The consequence of Safety
+String? profileUrl; //currently null
+
+// ERROR: Property 'length' cannot be accessed on 'String?' 
+// because it is potentially null.
+print(profileUrl.length)
+
+//Dart stops you here. It is saying: "I can't give you the length of null.
+//If I let you run this, your app will crash."
