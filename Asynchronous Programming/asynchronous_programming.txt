@@ -1,0 +1,14 @@
+Fetching data from the internet takes time (maybe 200ms, maybe 2 seconds).
+If your code runs like a normal train (line by line), the entire app would freeze while waiting for the data. 
+The user couldn't scroll or click anything.
+The Solution: Future and await Dart uses a tool called a Future to handle things that finish later.
+It's like a receipt at a coffee shop. You order (start the task), hold the receipt (the Future),
+and wait until they call your name (the data arrives).
+
+Syntax:
+
+Future<Type>: This function returns a "receipt", not the data itself immediately.
+
+async: Tells Dart "This function has slow parts."
+
+await: Tells Dart "Pause HERE and wait for the data before moving to the next line."
