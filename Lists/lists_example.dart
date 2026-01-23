@@ -1,3 +1,7 @@
+If you make a List final, you can still change the items inside it (add/remove), you just can't replace the whole list.
+
+If you make a List const, the whole thing is frozen. You cannot add, remove, or change anything inside.
+
 // List<String> tells Dart: "This is a list that ONLY holds Strings"
 
 void main() {
@@ -6,3 +10,4 @@ void main() {
   //The first item is at index 0.
   print(mySpices[0]);
 }
+
